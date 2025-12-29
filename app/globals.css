@@ -1,14 +1,46 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@tailwind utilities;
 
 @theme {
   --color-emerald: rgb(2, 90, 78);
-  --color-white: rgb(237, 231, 222);
 
   --bg-backdrop: rgba(237, 231, 222, 0.7);
 
   @keyframes gradient-move {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+@layer components {
+  .markdown {
+    @apply text-xl leading-relaxed;
+  }
+
+  .markdown p {
+    @apply mb-6;
+    line-height: 160%;
+  }
+
+  .markdown h2 {
+    @apply text-3xl font-bold mt-10 mb-4;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--title-font);
+    color: var(--color-emerald);
   }
 }

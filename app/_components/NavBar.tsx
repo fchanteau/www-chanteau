@@ -36,7 +36,7 @@ export function NavBar() {
                             <li
                                 key={item.path}
                                 className={
-                                    `cursor-pointer px-4 py-1.5 rounded-full flex text-emerald font-semibold hover:bg-white transition-colors ` +
+                                    `cursor-pointer text-lg px-4 py-1.5 rounded-full flex text-emerald font-semibold hover:bg-white transition-colors ` +
                                     (isActive
                                         ? "backdrop-blur-xl bg-white"
                                         : "")

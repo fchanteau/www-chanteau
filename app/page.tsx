@@ -9,7 +9,7 @@ export default function Home() {
             <span className="relative">
             Hi. I&apos;m François.
             <Image
-              src="./assets/star.svg"
+              src="/assets/star.svg"
               className="absolute -right-24 -top-12 hover:animate-[spin_1s_ease_infinite]"
               alt='Star'
               width={95}
@@ -23,7 +23,7 @@ export default function Home() {
             <span className="relative">
             A Web Developer.
             <Image
-              src="./assets/star.svg"
+              src="/assets/star.svg"
               className="absolute -left-24 -bottom-12 hover:animate-[spin_1s_ease_infinite]"
               alt='Star'
               width={95}

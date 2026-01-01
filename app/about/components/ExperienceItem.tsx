@@ -1,5 +1,3 @@
-'use client';
-
 import { BriefcaseBusiness, Calendar1, MapPin, ChevronDown, ChevronUp } from "lucide-react";
 
 type ExperienceItemProps = {
@@ -18,7 +16,7 @@ export function ExperienceItem({ active = false, onClick, index }: ExperienceIte
 
     return (
         <div className={`accordeon-item border-2 border-emerald rounded-xl group`}>
-            <div onClick={() => onClick(index)} role="button" className={`accordeon-header p-8 flex justify-between items-center ${accordeonHeaderActiveClass}
+            <div onClick={() => onClick(index)} role="button" className={`accordeon-header p-8 rounded-t-lg flex justify-between items-center ${accordeonHeaderActiveClass}
             hover:bg-emerald hover:text-white hover:cursor-pointer transition-colors duration-300`}>
                 <div className="flex gap-8 items-center"> 
                     <BriefcaseBusiness />
@@ -27,10 +25,10 @@ export function ExperienceItem({ active = false, onClick, index }: ExperienceIte
                         <p className={`${accordeonTitleActiveClass} group-hover:text-white transition-colors duration-300`}>@ Talan</p>
                     </div>
                 </div>
-                <div className="accordeon-actions flex gap-16 items-center">
-                    <ul className="space-y-1">
-                        <li className="flex gap-2"><Calendar1 /> 2021 - Present</li>
-                        <li className="flex gap-2"><MapPin /> Nantes, France</li>
+                <div className={`accordeon-actions flex gap-16 items-center ${accordeonTitleActiveClass} group-hover:text-white transition-colors duration-300`}>
+                    <ul className="space-y-1 font-bold">
+                        <li className="flex items-center justify-center gap-2"><Calendar1 /> 2021 - Present</li>
+                        <li className="flex items-center justify-center gap-2"><MapPin /> Nantes, France</li>
                     </ul>
                     <Chevron />
                 </div>

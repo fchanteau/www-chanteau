@@ -16,11 +16,8 @@ export default function Page(){
                     <p className="text-2xl text-emerald">I also have a strong understanding of DevOps practices, particularly around Kubernetes and GitHub, and make daily use of AI tools such as GitHub Copilot to improve development quality and efficiency, all within Azure cloud environments.</p>
                 </div>
             </div>
-
-            <div className="flex flex-col gap-8">
-                <h2 className="text-6xl font-bold text-center">My Experiences</h2>
-                <Experiences />
-            </div>
+            
+            <Experiences />
         </div>
     )
 }

@@ -3,7 +3,8 @@ import { titleFont } from "../lib/fonts";
 
 import "./globals.css";
 
-import { NavBar } from "./_components/NavBar";
+import { Footer } from "./_components/footer";
+import { Header } from "./_components/header";
 
 export const metadata: Metadata = {
   title: "François Chanteau - Web Developer",
@@ -17,12 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={titleFont.variable}>
-      <body className="antialiased m-0 p-0 min-h-svh bg-linear-to-l from-[#BDFFF3] via-[#FFEFBA] to-[#BDFFF3] bg-size-[400%_400%] animate-[gradient-move_10s_ease_infinite]">
-          <NavBar />
-
-          <main>
-            {children}
-          </main>
+      <body className="bg-background text-on-surface font-body-md min-h-screen flex flex-col relative selection:bg-primary-container selection:text-on-primary-container">
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );

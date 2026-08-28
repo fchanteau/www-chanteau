@@ -8,10 +8,9 @@ export function Footer() {
                 © 2026 François Chanteau. All rights reserved.
             </div>
             <div className="flex gap-4">
-                <a className="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-secondary dark:hover:text-secondary underline decoration-2 underline-offset-4 transition-all duration-300" href="#">GitHub</a>
-                <a className="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-secondary dark:hover:text-secondary underline decoration-2 underline-offset-4 transition-all duration-300" href="#">LinkedIn</a>
-                <a className="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-secondary dark:hover:text-secondary underline decoration-2 underline-offset-4 transition-all duration-300" href="#">Twitter</a>
-                <a className="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-secondary dark:hover:text-secondary underline decoration-2 underline-offset-4 transition-all duration-300" href="#">Email</a>
+                <a className="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-secondary dark:hover:text-secondary underline decoration-2 underline-offset-4 transition-all duration-300" href="https://github.com/fchanteau" target="_blank">GitHub</a>
+                <a className="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-secondary dark:hover:text-secondary underline decoration-2 underline-offset-4 transition-all duration-300" href="https://www.linkedin.com/in/françois-chanteau" target="_blank">LinkedIn</a>
+                <a className="text-on-surface-variant dark:text-on-surface-variant font-label-sm text-label-sm hover:text-secondary dark:hover:text-secondary underline decoration-2 underline-offset-4 transition-all duration-300" href="mailto:francois.chanteau49@gmail.com" target="_blank">Email</a>
             </div>
         </div>
     </footer>
